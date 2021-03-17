@@ -4,16 +4,16 @@ from auth import Auth
 class User(Resource):
     def get(self, id):
         if id == "me":
-            return {"msg": "Hello me"}
+            return {"message": "Hello me"}
         else:
-            return {"msg": id}
+            return {"message": id}
 
 class Login(Resource):
     def get(self):
-        return {"msg": "login_success",
+        return {"message": "login_success",
         "apikey": Auth.createApiKey(1)}
 
 
 class Register(Resource):
-    def get(self):
-        return {"msg": "register"}
+    def put(self):
+        return {"message": "register_success"}
