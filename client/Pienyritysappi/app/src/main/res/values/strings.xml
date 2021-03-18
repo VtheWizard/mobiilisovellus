@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Pienyritysappi</string>
+    <string name="button1">Button</string>
+    <string name="button2">Button</string>
+    <string name="button3">Button</string>
+    <string name="button4">Button</string>
+    <string name="buttonsivu1">sivu1</string>
+    <string name="buttonsivu2">sivu2</string>
+    <string name="buttonsivu3">sivu3</string>
+    <string name="buttonsivu4">sivu4</string>
 </resources>
