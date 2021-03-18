@@ -1,12 +1,12 @@
 from flask_restful import Resource
+from database import mysql, query
 from auth import Auth
 
 class User(Resource):
     def get(self, id):
-        if id == "me":
-            return {"message": "Hello me"}
-        else:
-            return {"message": id}
+        result = query("SELECT * FROM users WHERE user_id = %(user_id)s",
+        {"user_id": id}, True)
+        return result
 
 class Login(Resource):
     def get(self):

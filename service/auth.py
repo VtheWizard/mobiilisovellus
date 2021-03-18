@@ -1,3 +1,5 @@
+from database import mysql 
+
 class Auth():
 
     # checks the key from apikey header,
